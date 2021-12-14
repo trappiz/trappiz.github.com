@@ -63,15 +63,10 @@ params:
     imageHeight: 280
     imageTitle: my image
     buttons:
-      - name: CV
-        url: cv
+      - name: About Me
+        url: about/about
       - name: Blog
         url: blog
-
-  # home-info mode
-  homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
 
   socialIcons:
     - name: instagram
@@ -105,9 +100,9 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: Curriculum Vitae
-      name: Curriculum Vitae
-      url: /cv/
+    - identifier: About Me
+      name: About Me
+      url: /about/about
       weight: 10
     - identifier: Blog
       name: Blog
