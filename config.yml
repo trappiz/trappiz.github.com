@@ -1,5 +1,5 @@
 baseURL: "https://trappiz.github.io"
-title: engvall.it
+title: ENGVALL.IT
 paginate: 5
 theme: PaperMod
 
@@ -50,7 +50,7 @@ params:
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: /logo.png
     iconHeight: 35
 
   # profile-mode
