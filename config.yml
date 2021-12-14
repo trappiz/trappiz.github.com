@@ -58,7 +58,7 @@ params:
     enabled: true # needs to be explicitly set
     title: Niklas Engvall
     subtitle: "engvall.it"
-    imageUrl: "https://i.imgur.com/Hhu5CmN.jpg"
+    imageUrl: "https://raw.githubusercontent.com/trappiz/trappiz.github.com/gh-pages/profile.jpg"
     imageWidth: 240
     imageHeight: 280
     imageTitle: my image
