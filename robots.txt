@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://engvall.it/sitemap.xml
+Sitemap: https://trappiz.github.io/sitemap.xml
