@@ -5,9 +5,15 @@ IT-ninja with a strong passion for primarily Linux, k8s and automation with a so
 
 ## 🔥  Technical Experience 
 
+### Conoa AB
+
+#### **Senior DevOps Engineer** _(Jul 2018 - Dec 2021)_
+
+> I work as a consultant with focus on kubernetes, linux and automation.
+
 ### Iver AB (Prev. DGC AB)
 
-#### **DevSecOps Engineer** _(Jul 2018 - Present)_
+#### **DevSecOps Engineer** _(Jul 2018 - Dec 2021)_
 
 > Roll som innefattar system administration, utveckling och teknisk stödfunktion för kundteam ut mot kunder i diverse leveranser.
 Har på egen hand byggt interna stödsystem inom teamet samt mot kundteam/slutkund.
@@ -17,7 +23,7 @@ Berömd flertalet gånger för tekniska lösningar samt dokumentation av kollego
 
 ### Cygate AB
 
-#### **3:rd line technician** (Jun 2013 – Jun 2018)
+#### **3:rd line technician** _(Jun 2013 – Jun 2018)_
 
 > Ansvarsområden var virtualisering (VMware), hårdvara (Cisco, Dell, HPE), datacenter, monitorering (Xymon, Monitorscout, Nagios) samt linux (CentOS, RedHat, Debian, Ubuntu). Har även innefattat en stor del administration av Microsoft system (Server 2003-2016, AD, Exchange) av olika slag.
 Varit med och byggt tjänsten ”Hosted VMware” i Stockholm som vunnit pris i TechWorld 2 år i rad för bästa molntjänst. Tjänsten i sig är en ”pay-as-you-go” tjänst där kunden får ett virtuellt datacenter där nya servrar kan installeras upp helt på egen hand. Byggt den redundanta DNS-cache lösningen som bygger på bind, quagga och OSPF som smidigt kan utökas och underhållas utan någon påverkan av funktion.
