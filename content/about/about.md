@@ -7,7 +7,7 @@ IT-ninja with a strong passion for primarily Linux, k8s and automation with a so
 
 ### Conoa AB
 
-#### **Senior DevOps Engineer** _(Jul 2018 - Dec 2021)_
+#### **Senior DevOps Engineer** _(Jan 2022 - Present)_
 
 > I work as a consultant with focus on kubernetes, linux and automation.
 
