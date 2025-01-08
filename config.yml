@@ -1,6 +1,6 @@
 baseURL: "https://trappiz.github.io"
 title: ENGVALL.IT
-paginate: 5
+pagination.pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true
