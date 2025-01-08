@@ -5,20 +5,31 @@
     <link>https://trappiz.github.io/about/</link>
     <description>Recent content in Abouts on ENGVALL.IT</description>
     <image>
+      <title>ENGVALL.IT</title>
       <url>https://trappiz.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://trappiz.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://trappiz.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en</language>
+    <atom:link href="https://trappiz.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://trappiz.github.io/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://trappiz.github.io/about/about/</guid>
-      <description>Niklas Engvall About me IT-ninja with a strong passion for primarily Linux, k8s and automation with a solid ground from the infrastructure perspektive.
-🔥 Technical Experience Conoa AB Senior DevOps Engineer (Jan 2022 - Present)  I work as a consultant with focus on kubernetes, linux and automation.
- Iver AB (Prev. DGC AB) DevSecOps Engineer (Jul 2018 - Dec 2021)  Roll som innefattar system administration, utveckling och teknisk stödfunktion för kundteam ut mot kunder i diverse leveranser.</description>
+      <description>&lt;h1 id=&#34;niklas-engvall&#34;&gt;Niklas Engvall&lt;/h1&gt;
+&lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;
+&lt;p&gt;IT-ninja with a strong passion for primarily Linux, k8s and automation with a solid ground from the infrastructure perspective.&lt;/p&gt;
+&lt;h2 id=&#34;--technical-experience&#34;&gt;🔥  Technical Experience&lt;/h2&gt;
+&lt;h3 id=&#34;conoa-ab&#34;&gt;Conoa AB&lt;/h3&gt;
+&lt;h4 id=&#34;senior-devsecops-engineer---consultant-_jan-2022---present_&#34;&gt;&lt;strong&gt;Senior DevSecOps Engineer - Consultant&lt;/strong&gt; &lt;em&gt;(Jan 2022 - Present)&lt;/em&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I work as a consultant with focus on kubernetes, linux and automation.
+So far worked with Rancher, VMware Tanzu, RedHat Openshift and AWS EKS at different positions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tech lead in the deployment of various EKS clusters in AWS. This included automation using ansible to generate cloudformation stacks to handle all deployments as IaC.
+Various support systems as in managed Prometheus, S3-buckets for backup of clusters etc.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
