@@ -17,10 +17,10 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: 
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
+  description: "Home of Niklas Engvall"
+  keywords: [Blog, Portfolio, CV, Engvall, Niklas]
   author: Me
-  # author: ["Me", "You"] # multiple authors
+  author: ["Me", "Niklas Engvall"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark # dark, light

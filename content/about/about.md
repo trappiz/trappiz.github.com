@@ -3,6 +3,8 @@
 ## About me
 IT-ninja with a strong passion for primarily Linux, k8s and automation with a solid ground from the infrastructure perspective.
 
+![Professional Cloud Architect Certification](/gcp_pro_architect.png?raw=true)
+
 ## 🔥  Technical Experience 
 
 ### Conoa AB
