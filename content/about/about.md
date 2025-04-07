@@ -1,11 +1,24 @@
 # Niklas Engvall
 
+# Table of contents
+1. [About Me](#about-me)
+2. [Certificates](#certificates)
+3. [Technical Experience](#-technical-experience)
+    1. [Conoa AB](#conoa-ab)
+    2. [DGC/Iver AB](#iver-ab-prev-dgc-ab)
+    3. [Cygate AB](#cygate-ab)
+4. [Languages](#-languages)
+
 ## About me
 IT-ninja with a strong passion for primarily Linux, k8s and automation with a solid ground from the infrastructure perspective.
 
-![Professional Cloud Architect Certification](/gcp_pro_architect.png?raw=true)
+## Certificates
+{{< figure src="/gcp_pro_architect_badge.png" title="Google Cloud Certified Professional Cloud Architect" width="400">}}
+{{< figure src="/cka_badge.png" title="Certified Kubernetes Administrator" width="400">}}
+{{< figure src="/suse_neuvector_badge.png" title="SUSE Certified Deployment Specialist Neuvector 5" width="400">}}
+{{< figure src="/suse_rancher_badge.png" title="SUSE Certified Deployment Rancher Manager 2.7 & 2.8 for Rancher Prime" width="400">}}
 
-## 🔥  Technical Experience 
+## 🔥 Technical Experience
 
 ### Conoa AB
 
