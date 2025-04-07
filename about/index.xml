@@ -18,18 +18,52 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://trappiz.github.io/about/about/</guid>
       <description>&lt;h1 id=&#34;niklas-engvall&#34;&gt;Niklas Engvall&lt;/h1&gt;
+&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#about-me&#34;&gt;About Me&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#certificates&#34;&gt;Certificates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#-technical-experience&#34;&gt;Technical Experience&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#conoa-ab&#34;&gt;Conoa AB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#iver-ab-prev-dgc-ab&#34;&gt;DGC/Iver AB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cygate-ab&#34;&gt;Cygate AB&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#-languages&#34;&gt;Languages&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;
 &lt;p&gt;IT-ninja with a strong passion for primarily Linux, k8s and automation with a solid ground from the infrastructure perspective.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Professional Cloud Architect Certification&#34; loading=&#34;lazy&#34; src=&#34;https://trappiz.github.io/gcp_pro_architect.png?raw=true&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;--technical-experience&#34;&gt;🔥  Technical Experience&lt;/h2&gt;
+&lt;h2 id=&#34;certificates&#34;&gt;Certificates&lt;/h2&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://trappiz.github.io/gcp_pro_architect_badge.png&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+            Google Cloud Certified Professional Cloud Architect
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://trappiz.github.io/cka_badge.png&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+            Certified Kubernetes Administrator
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://trappiz.github.io/suse_neuvector_badge.png&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+            SUSE Certified Deployment Specialist Neuvector 5
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://trappiz.github.io/suse_rancher_badge.png&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+            SUSE Certified Deployment Rancher Manager 2.7 &amp;amp; 2.8 for Rancher Prime
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;-technical-experience&#34;&gt;🔥 Technical Experience&lt;/h2&gt;
 &lt;h3 id=&#34;conoa-ab&#34;&gt;Conoa AB&lt;/h3&gt;
 &lt;h4 id=&#34;senior-devsecops-engineer---consultant-jan-2022---present&#34;&gt;&lt;strong&gt;Senior DevSecOps Engineer - Consultant&lt;/strong&gt; &lt;em&gt;(Jan 2022 - Present)&lt;/em&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;I work as a consultant with focus on kubernetes, linux and automation.
-So far worked with Rancher, VMware Tanzu, RedHat Openshift and AWS EKS at different positions.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Tech lead in the deployment of various EKS clusters in AWS. This included automation using ansible to generate cloudformation stacks to handle all deployments as IaC.
-Various support systems as in managed Prometheus, S3-buckets for backup of clusters etc.&lt;/p&gt;</description>
+So far worked with Rancher, VMware Tanzu, RedHat Openshift and AWS EKS at different positions.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
