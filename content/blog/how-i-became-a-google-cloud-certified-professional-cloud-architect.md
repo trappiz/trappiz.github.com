@@ -5,7 +5,7 @@ draft: false
 ---
 # How I Became a Google Cloud Certified Professional Cloud Architect
 
-Becoming a **Google Cloud iCertified Professional Cloud Architect** was a journey filled with learning, hands-on practice, and a structured study plan. I wanted to share my experience in hopes it helps others pursuing the same goal as me.
+Becoming a **Google Cloud Certified Professional Cloud Architect** was a journey filled with learning, hands-on practice, and a structured study plan. I wanted to share my experience in hopes it helps others pursuing the same goal as me.
 
 ## Why I Chose This Certification
 
