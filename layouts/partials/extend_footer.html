@@ -1,0 +1,119 @@
+<div id="tsparticles"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3.9.1/tsparticles.bundle.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", async function() {
+    
+    // Initialize the tsParticles engine
+    await loadFull(tsParticles);
+
+    // Variable to hold our running particles instance
+    let particlesContainer;
+
+    // We wrap the configuration in a function so we can call it again when the theme changes
+    async function loadStars() {
+        
+        // Check for BOTH the legacy 'dark' class and the new 'data-theme' attribute
+        const isDarkMode = 
+            document.body.className.includes("dark") || 
+            document.body.getAttribute("data-theme") === "dark" ||
+            document.documentElement.getAttribute("data-theme") === "dark";
+        
+        // Set stars to pure white for dark mode, and a dark grey for light mode
+        const starColor = isDarkMode ? "#ffffff" : "#333333";
+
+        // If a particle system is already running, destroy it before making a new one
+        if (particlesContainer) {
+            particlesContainer.destroy();
+        }
+
+        // Load the NASA visual configuration with the dynamic color
+        particlesContainer = await tsParticles.load({
+            id: "tsparticles",
+            options: {
+                background: {
+                    color: {
+                        value: "transparent", 
+                    },
+                },
+                particles: {
+                    number: {
+                        value: 160, 
+                        density: {
+                            enable: true,
+                            width: 800,
+                        }
+                    },
+                    color: {
+                        value: starColor, /* Injects our dynamic color here! */
+                    },
+                    shape: {
+                        type: "circle",
+                    },
+                    opacity: {
+                        value: { min: 0, max: 1 }, 
+                        animation: {
+                            enable: true,
+                            speed: 1, 
+                            sync: false, 
+                        }
+                    },
+                    size: {
+                        value: { min: 1, max: 3 }, 
+                    },
+                    links: {
+                        enable: false, 
+                    },
+                    move: {
+                        enable: true,
+                        speed: 0.5, 
+                        direction: "none",
+                        random: true,
+                        outModes: {
+                            default: "out",
+                        },
+                    },
+                },
+                interactivity: {
+                    events: {
+                        onHover: {
+                            enable: true,
+                            mode: "bubble", 
+                        },
+                        onClick: {
+                            enable: true,
+                            mode: "repulse", 
+                        },
+                    },
+                    modes: {
+                        bubble: {
+                            distance: 250,
+                            size: 0, 
+                            duration: 2,
+                            opacity: 0, 
+                        },
+                        repulse: {
+                            distance: 400,
+                            duration: 0.4,
+                        },
+                    },
+                },
+                detectRetina: true,
+            },
+        });
+    }
+
+    // Load the stars immediately when the page loads
+    await loadStars();
+
+    // Hook into PaperMod's built-in theme toggle button
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener("click", function() {
+            // Give PaperMod a moment to update the HTML attributes before redrawing
+            setTimeout(loadStars, 50); 
+        });
+    }
+});
+</script>
