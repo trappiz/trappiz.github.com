@@ -42,6 +42,12 @@
 &lt;/figure&gt;
 
 &lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://trappiz.github.io/gitlab_pse.png&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+            GitLab Certified Services Engineer Professional
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
     &lt;img loading=&#34;lazy&#34; src=&#34;https://trappiz.github.io/suse_neuvector_badge.png&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
             SUSE Certified Deployment Specialist Neuvector 5
         &lt;/figcaption&gt;
@@ -52,13 +58,7 @@
             SUSE Certified Deployment Rancher Manager 2.7 &amp;amp; 2.8 for Rancher Prime
         &lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;-technical-experience&#34;&gt;🔥 Technical Experience&lt;/h2&gt;
-&lt;h3 id=&#34;conoa-ab&#34;&gt;Conoa AB&lt;/h3&gt;
-&lt;h4 id=&#34;senior-devsecops-engineer---consultant-jan-2022---present&#34;&gt;&lt;strong&gt;Senior DevSecOps Engineer - Consultant&lt;/strong&gt; &lt;em&gt;(Jan 2022 - Present)&lt;/em&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I work as a consultant with focus on kubernetes, linux and automation.
-So far worked with Rancher, VMware Tanzu, RedHat Openshift and AWS EKS at different positions.&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
