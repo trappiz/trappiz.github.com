@@ -15,6 +15,7 @@ IT-ninja with a strong passion for primarily Linux, k8s and automation with a so
 ## Certificates
 {{< figure src="/gcp_pro_architect_badge.png" title="Google Cloud Certified Professional Cloud Architect" width="400">}}
 {{< figure src="/cka_badge.png" title="Certified Kubernetes Administrator" width="400">}}
+{{< figure src="/gitlab_pse.png" title="GitLab Certified Services Engineer Professional" width="400">}}
 {{< figure src="/suse_neuvector_badge.png" title="SUSE Certified Deployment Specialist Neuvector 5" width="400">}}
 {{< figure src="/suse_rancher_badge.png" title="SUSE Certified Deployment Rancher Manager 2.7 & 2.8 for Rancher Prime" width="400">}}
 

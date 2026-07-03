@@ -4,7 +4,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", async function() {
-    
+
     // Initialize the tsParticles engine
     await loadFull(tsParticles);
 
@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     // We wrap the configuration in a function so we can call it again when the theme changes
     async function loadStars() {
-        
+
         // Check for BOTH the legacy 'dark' class and the new 'data-theme' attribute
         const isDarkMode = 
             document.body.className.includes("dark") || 
             document.body.getAttribute("data-theme") === "dark" ||
             document.documentElement.getAttribute("data-theme") === "dark";
-        
+
         // Set stars to pure white for dark mode, and a dark grey for light mode
         const starColor = isDarkMode ? "#ffffff" : "#333333";
 
@@ -117,3 +117,119 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
 });
 </script>
+
+{{ if .IsHome }}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let subtitleEl = null;
+
+        // Smart search: Scan through all text elements (span, p, div) on the page
+        // and find the one that contains exactly "Loading terminal..."
+        const elements = document.querySelectorAll('span, p, div');
+        for (const el of elements) {
+            // We are looking for an element that ONLY contains text and no other tags
+            if (el.children.length === 0 && el.textContent.trim().includes('Loading terminal')) {
+                subtitleEl = el;
+                break; // Target found! Stop searching.
+            }
+        }
+
+        // If the script still can't find the text, log it to the console
+        if (!subtitleEl) {
+            console.error("Typewriter script: Could not find the text 'Loading terminal...'");
+            return;
+        }
+
+        // Create CSS for the blinking terminal cursor with Light/Dark mode support
+        const style = document.createElement('style');
+        style.textContent = `
+            .terminal-cursor {
+                display: inline-block;
+                width: 10px;
+                height: 1.2em;
+                margin-left: 4px;
+                animation: blink 1s step-end infinite;
+                vertical-align: text-bottom;
+            }
+
+            /* Light mode color (Default) - Dark Slate */
+            body:not(.dark) .terminal-cursor {
+                background-color: #1e293b;
+            }
+
+            /* Dark mode color - Neon Cyan */
+            body.dark .terminal-cursor {
+                background-color: #f8fafc;
+            }
+
+            @keyframes blink { 50% { opacity: 0; } }
+        `;
+        document.head.appendChild(style);
+
+        // Your new sentence, split into a "base" prefix and rotating "endings"
+        const prefix = "Developer and problem solver focused on ";
+        const endings = [
+            "continuous learning.",
+            "innovative tech.",
+            "being awesome!",
+            "crafting impactful digital experiences."
+        ];
+
+        let endingIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let isTypingPrefix = true; // Tracks if we are currently typing the base prefix
+
+        function type() {
+            let displayedText = "";
+            let speed = 50;
+
+            // Type out the prefix "Developer and problem solver focused on "
+            if (isTypingPrefix) {
+                displayedText = prefix.substring(0, charIndex + 1);
+                charIndex++;
+                speed = 30 + Math.random() * 40; // Random "human" typing speed
+
+                // When the prefix is fully typed, pause and move to the endings
+                if (charIndex === prefix.length) {
+                    isTypingPrefix = false;
+                    charIndex = 0;
+                    speed = 600; // Pause before typing the first ending
+                }
+            }
+            // Rotating through the different focus areas (endings)
+            else {
+                const currentEnding = endings[endingIndex];
+
+                if (isDeleting) {
+                    displayedText = prefix + currentEnding.substring(0, charIndex - 1);
+                    charIndex--;
+                    speed = 20; // Fast deletion speed
+                } else {
+                    displayedText = prefix + currentEnding.substring(0, charIndex + 1);
+                    charIndex++;
+                    speed = 40 + Math.random() * 50; // Random typing speed
+                }
+
+                // Logic for when a word is fully typed or fully deleted
+                if (!isDeleting && charIndex === currentEnding.length) {
+                    speed = 3000; // Time to read the full sentence before deleting
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    endingIndex = (endingIndex + 1) % endings.length;
+                    speed = 500; // Short pause before typing the next word
+                }
+            }
+
+            // Inject the typed text along with the terminal cursor span
+            subtitleEl.innerHTML = displayedText + '<span class="terminal-cursor"></span>';
+            setTimeout(type, speed);
+        }
+
+        // Start by displaying just the blinking cursor for one second
+        subtitleEl.innerHTML = '<span class="terminal-cursor"></span>';
+        setTimeout(type, 1000);
+    });
+</script>
+{{ end }}

@@ -1,0 +1,72 @@
+{{ define "main" }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{- end }}
+</header>
+
+<div class="project-grid">
+    {{ range .Pages }}
+    <article class="project-card">
+        {{ if .Params.cover.image }}
+        <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}" class="project-image">
+        {{ end }}
+        <div class="project-content">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary }}</p>
+            <div class="project-tags">
+                {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+        </div>
+    </article>
+    {{ end }}
+</div>
+
+<style>
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 2rem;
+    }
+    .project-card {
+        background: var(--entry);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.2s;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .project-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .project-content {
+        padding: 1.5rem;
+        flex-grow: 1;
+    }
+    .project-content h2 { margin-top: 0; }
+    .project-tags {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .tag {
+        font-size: 0.8rem;
+        background: var(--border);
+        color: var(--primary);
+        padding: 4px 10px;
+        border-radius: 20px;
+    }
+</style>
+{{ end }}

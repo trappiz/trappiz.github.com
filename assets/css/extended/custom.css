@@ -1,3 +1,33 @@
+/* Import modern fonts (Inter for body text, Fira Code for code blocks) */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+:root {
+    --font: 'Inter', sans-serif;
+    --code-font: 'Fira Code', monospace;
+}
+
+/* Upgrade Dark Mode to a deep "Slate/Midnight" vibe instead of dull gray */
+.dark {
+    --theme: #0f172a;      /* Background: Slate 900 */
+    --entry: #1e293b;      /* Cards/Posts: Slate 800 */
+    --primary: #f8fafc;    /* Primary text */
+    --secondary: #cbd5e1;  /* Secondary text */
+    --tertiary: #94a3b8;   /* Tertiary text */
+    --content: #e2e8f0;    /* Article body text */
+    --hljs-bg: #020617;    /* Code blocks: Very dark */
+    --border: #334155;     /* Borders */
+    --accent: #38bdf8;     /* Accent color: Neon Blue/Cyan */
+}
+
+/* Apply accent color to links and hover effects */
+a {
+    color: var(--accent);
+    transition: color 0.2s ease-in-out;
+}
+a:hover {
+    filter: brightness(1.2);
+}
+
 /* Container for the dynamic background */
 #tsparticles {
     position: fixed;

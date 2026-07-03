@@ -1,0 +1,58 @@
+{{ define "main" }}
+<div class="terminal-404">
+    <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+    </div>
+    <div class="terminal-body">
+        <p><span class="prompt">engvall@server:~$</span> cd /<span id="path-text"></span></p>
+        <p class="error">bash: cd: /<span id="path-text-error"></span>: No such file or directory</p>
+        <br>
+        <p><span class="prompt">engvall@server:~$</span> <a href="/" class="return-link">./return_home.sh</a></p>
+    </div>
+</div>
+
+<script>
+    // Print the URL path the user tried to access
+    const path = window.location.pathname.substring(1);
+    document.getElementById('path-text').innerText = path;
+    document.getElementById('path-text-error').innerText = path;
+</script>
+
+<style>
+    .terminal-404 {
+        background: #020617;
+        border-radius: 8px;
+        margin: 4rem auto;
+        max-width: 600px;
+        font-family: var(--code-font, monospace);
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .terminal-header {
+        background: #1e293b;
+        padding: 12px;
+        display: flex;
+        gap: 8px;
+    }
+    .dot { width: 12px; height: 12px; border-radius: 50%; }
+    .red { background: #ef4444; }
+    .yellow { background: #eab308; }
+    .green { background: #22c55e; }
+    .terminal-body {
+        padding: 24px;
+        color: #e2e8f0;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+    .prompt { color: #22c55e; font-weight: bold; margin-right: 8px;}
+    .error { color: #ef4444; }
+    .return-link { 
+        color: #38bdf8; 
+        text-decoration: none; 
+        border-bottom: 1px dashed #38bdf8; 
+    }
+    .return-link:hover { background: rgba(56, 189, 248, 0.1); }
+</style>
+{{ end }}
