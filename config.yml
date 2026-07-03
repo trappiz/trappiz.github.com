@@ -17,7 +17,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: 
-  description: "Home of Niklas Engvall"
+  description: "Developer and problem solver focused on continuous learning, innovative tech, and crafting impactful digital experiences."
   keywords: [Blog, Portfolio, CV, Engvall, Niklas]
   author: ["Me", "Niklas Engvall"] # multiple authors
   #images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -29,7 +29,7 @@ params:
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
@@ -56,7 +56,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Niklas Engvall
-    subtitle: "niklas@engvall.it"
+    subtitle: "Loading terminal..."
     imageUrl: "https://raw.githubusercontent.com/trappiz/trappiz.github.com/gh-pages/profile.jpg"
     imageWidth: 240
     imageHeight: 280
