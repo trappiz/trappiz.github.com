@@ -150,16 +150,7 @@ document.addEventListener("DOMContentLoaded", async function() {
                 margin-left: 4px;
                 animation: blink 1s step-end infinite;
                 vertical-align: text-bottom;
-            }
-
-            /* Light mode color (Default) - Dark Slate */
-            body:not(.dark) .terminal-cursor {
-                background-color: #1e293b;
-            }
-
-            /* Dark mode color - Neon Cyan */
-            body.dark .terminal-cursor {
-                background-color: #f8fafc;
+                background-color: var(--pop);
             }
 
             @keyframes blink { 50% { opacity: 0; } }

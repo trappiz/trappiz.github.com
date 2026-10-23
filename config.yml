@@ -1,6 +1,7 @@
-baseURL: "https://trappiz.github.io"
+baseURL: "https://engvall.it/"
 title: ENGVALL.IT
-pagination.pagerSize: 5
+pagination:
+  pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -19,7 +20,7 @@ params:
   title: 
   description: "Developer and problem solver focused on continuous learning, innovative tech, and crafting impactful digital experiences."
   keywords: [Blog, Portfolio, CV, Engvall, Niklas]
-  author: ["Me", "Niklas Engvall"] # multiple authors
+  author: "Niklas Engvall"
   #images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark # dark, light
@@ -41,11 +42,10 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon-32x32.png"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
 
   label:
     text: "Home"
@@ -57,7 +57,7 @@ params:
     enabled: true # needs to be explicitly set
     title: Niklas Engvall
     subtitle: "Loading terminal..."
-    imageUrl: "https://raw.githubusercontent.com/trappiz/trappiz.github.com/gh-pages/profile.jpg"
+    imageUrl: "/profile.jpg"
     imageWidth: 240
     imageHeight: 280
     imageTitle: my image
@@ -83,7 +83,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/trappiz/trappiz.github.com/content"
+    URL: "https://github.com/trappiz/trappiz.github.com/edit/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 

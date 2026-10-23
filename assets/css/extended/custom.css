@@ -1,31 +1,57 @@
 /* Import modern fonts (Inter for body text, Fira Code for code blocks) */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap');
 
+/* Light mode palette */
 :root {
     --font: 'Inter', sans-serif;
     --code-font: 'Fira Code', monospace;
+    --theme: #fffbff;      /* Background */
+    --entry: #f9f4f5;      /* Cards/Posts: slightly darker for contrast */
+    --tertiary: #f9f4f5;   /* Buttons/tags background */
+    --code-bg: #f9f4f5;    /* Inline code */
+    --border: #ebe3e5;     /* Borders */
+    --accent: #729ea1;     /* Links: Cyan */
+    --pop: #c6a15b;        /* Highlights that should stand out more than cyan: goldish */
 }
 
-/* Upgrade Dark Mode to a deep "Slate/Midnight" vibe instead of dull gray */
-.dark {
-    --theme: #0f172a;      /* Background: Slate 900 */
-    --entry: #1e293b;      /* Cards/Posts: Slate 800 */
-    --primary: #f8fafc;    /* Primary text */
-    --secondary: #cbd5e1;  /* Secondary text */
-    --tertiary: #94a3b8;   /* Tertiary text */
-    --content: #e2e8f0;    /* Article body text */
-    --hljs-bg: #020617;    /* Code blocks: Very dark */
-    --border: #334155;     /* Borders */
-    --accent: #38bdf8;     /* Accent color: Neon Blue/Cyan */
+/* Dark mode palette */
+:root[data-theme="dark"] {
+    --theme: #4c4c4c;      /* Background: Grey */
+    --entry: #575757;      /* Cards/Posts */
+    --primary: #f5f5f5;    /* Primary text */
+    --secondary: #d4d4d4;  /* Secondary text */
+    --tertiary: #5e5e5e;   /* Buttons/tags background */
+    --content: #ececec;    /* Article body text */
+    --code-block-bg: #3a3a3a; /* Code blocks */
+    --code-bg: #575757;    /* Inline code */
+    --border: #5e5e5e;     /* Borders */
 }
 
-/* Apply accent color to links and hover effects */
+/* Apply accent color to links, and the pop color on hover */
 a {
     color: var(--accent);
     transition: color 0.2s ease-in-out;
 }
 a:hover {
-    filter: brightness(1.2);
+    color: var(--pop);
+}
+
+/* Current page in the menu */
+#menu .active {
+    border-bottom-color: var(--pop);
+}
+
+/* Profile buttons: outline so they stay visible on the light background */
+.button {
+    border: 1px solid var(--border);
+}
+.button:hover {
+    border-color: var(--pop);
+}
+
+/* The header logo is white, so flip it to black in light mode */
+[data-theme="light"] .logo a img {
+    filter: invert(1);
 }
 
 /* Container for the dynamic background */
@@ -39,7 +65,11 @@ a:hover {
     pointer-events: auto; 
 }
 
-/* Ensure the main content sits on top and the body background doesn't hide the boxes */
+/* Ensure the main content sits on top and the body background doesn't hide the boxes.
+   The theme color is painted on <html> instead, behind the particles. */
+html {
+    background-color: var(--theme);
+}
 body {
     background-color: transparent !important;
 }
